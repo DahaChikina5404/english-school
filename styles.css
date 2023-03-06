@@ -143,7 +143,6 @@ h1, h2, p, a {
 
 /*Наши преимущества. 3 блока*/
 .our_benefits {
-            width: 100%;
             max-width: 1024px;
             margin: auto;
             margin-top: 100px;
@@ -201,7 +200,6 @@ h1, h2, p, a {
 /* О нас. Текст, картинка */
 
 .about_us {
-            width: 100%;
             max-width: 1024px;
             margin: auto;
             margin-top: 100px;
@@ -241,7 +239,6 @@ h1, h2, p, a {
 
 
 .request {
-            width: 100%;
             height: 350px;
             background-color: #ffedd5;
             margin-top: 70px;
@@ -303,7 +300,6 @@ h1, h2, p, a {
 
 
 .reviews_gray {
-            width: 100%;
             background-color: #fafaf9;
             padding-bottom: 50px;
 }
@@ -351,7 +347,6 @@ h1, h2, p, a {
 /* Абонементы */
 
 .our_passes {
-            width: 100%;
             max-width: 1024px;
             margin: auto;
             margin-top: 100px;
@@ -450,7 +445,6 @@ h1, h2, p, a {
 .footer {
             background-color: #d6d3d1;
             height: 150px;
-            width: 100%;
             margin-top: 60px;
             padding-bottom: 30px;
 }
