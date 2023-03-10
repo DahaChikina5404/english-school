@@ -5,23 +5,25 @@ h1, h2, p, a {
             text-decoration: none;
 }
 
-
+.content {
+            max-width: 1024px;
+            margin: auto;
+}
 
 .hero_main_size {
             background: url(hero.jpg);
             height: 800px;
             background-size: cover;
             background-position: center top;
-            width: 100%;
             padding-top: 20px;
-            margin: auto;
 }
+
+
+
 
 /*Логотип, навигация */
 .header {
             height: 80px;
-            max-width: 1024px;
-            margin: auto;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -30,7 +32,6 @@ h1, h2, p, a {
 
 .header__image_logo { 
             height: 100px;
-            width: 100px;
             object-fit: contain;
 }
 
@@ -97,8 +98,6 @@ h1, h2, p, a {
 /*Главный заголовок, кнопка */
 .hero_size {
             margin-top: 100px;        
-            max-width: 1024px;
-            margin: auto;
 }
 
 .hero_title {
@@ -139,12 +138,8 @@ h1, h2, p, a {
 
 
 
-
-
 /*Наши преимущества. 3 блока*/
 .our_benefits {
-            max-width: 1024px;
-            margin: auto;
             margin-top: 100px;
 }
 .our_benefits__title { 
@@ -200,8 +195,6 @@ h1, h2, p, a {
 /* О нас. Текст, картинка */
 
 .about_us {
-            max-width: 1024px;
-            margin: auto;
             margin-top: 100px;
             padding-bottom: 20px;
 }
@@ -246,8 +239,6 @@ h1, h2, p, a {
 }
 
 .request_main {
-             max-width: 1024px;
-             margin: auto;
              padding-top: 70px;
 }
 
@@ -306,8 +297,7 @@ h1, h2, p, a {
 
 
 .reviews_field { 
-            max-width: 1024px;
-            margin: auto;
+           
 }
 
 .reviews_title {
@@ -347,8 +337,6 @@ h1, h2, p, a {
 /* Абонементы */
 
 .our_passes {
-            max-width: 1024px;
-            margin: auto;
             margin-top: 100px;
 }
 
@@ -374,7 +362,8 @@ h1, h2, p, a {
 .our_passes__months {
             display: flex;
             flex-direction: column;
-            justify-content:space-around;
+            flex-grow: 1;
+            /* justify-content:space-around; */
             align-items: flex-start;
             color: #44403c;
             font-size: 16px;
@@ -451,8 +440,6 @@ h1, h2, p, a {
 
 
 .footer_size {
-            max-width: 1024px;        
-            margin: auto;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
