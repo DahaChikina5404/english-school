@@ -3,6 +3,7 @@
 	
 	<head>
 		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
   		<title> English School </title>
 		<link rel="stylesheet" type ="text/css" href="reset.css"/>
 		<link rel="stylesheet" type ="text/css" href="styles.css"/>
@@ -17,20 +18,21 @@
 		<div class="hero_main_size">
 			<div>
 <!--Логотип, навигация-->	
-				<header class="header" class="content">
+				<header class="header content">
 				
 						<div>
 							<img class="header__image_logo" src="logo.svg" alt="Логотип школы"/>	
 						</div>
-																			
-						<nav>
-							<a class= "navigation_cost" href="#cost">Стоимость</a>
-						</nav>
+						
+						<div class="navigation__main">
+								<nav>
+									<a class= "navigation_cost" href="#cost">Стоимость</a>
+								</nav>
 
-						<nav>
-							<a class="navigation_reviews" href="#reviews">Отзывы</a>
-						</nav>
-
+								<nav>
+									<a class="navigation_reviews" href="#reviews">Отзывы</a>
+								</nav>
+						</div>
 
 						<div class="header_icon">
 							<div class="header_icon__phone">
@@ -47,7 +49,7 @@
 
 <!--Главный заголовок, кнопка-->	
 
-					<div class="hero_size">
+					<div class="hero_size content">
 
 						<div class="hero_title">
 							<h1>Лучший способ заговорить на английском</h1>
@@ -63,7 +65,7 @@
 		</div>
 				
 <!--Наши преимущества. 3 блока-->	
-		<div class="our_benefits" class="content">
+		<div class="our_benefits content">
 
 			<div class="our_benefits__title">
 				<h2>Начните разговаривать с первого занятия</h2>
@@ -93,7 +95,7 @@
 		</div>
 
 <!--О нас. Текст, картинка-->
-			<main class="about_us">
+			<main class="about_us content">
 					<div class="about_us__container">
 						<div>
 							<h2 class="about_us__title">Мы научим говорить уверенно!</h2>
@@ -114,7 +116,7 @@
 
 <!--Поля с формой записи на урок-->
 
-		<section class="request">
+		<section class="request content">
 			<div class="request_main">
 				<h2 id="lesson_entry" class="request_main__tile">Запишитесь на бесплатный урок уже сегодня</h2>
 
@@ -143,7 +145,7 @@
 
 
 <!--отзывы-->		
-		<div class="reviews_gray">
+		<div class="reviews_gray content">
 			<div class="reviews_field">
 
 				<div class="reviews_title">
@@ -173,7 +175,7 @@
 		</div>
 
 <!--Стоимость абонементов. 3 блока-->
-			<div class="our_passes">
+			<div class="our_passe content">
 
 					<div>
 						<h2 class="our_passes__title" id="cost">Наши абонементы</h2>
@@ -184,27 +186,33 @@
 								<p class="our_passes__month">1 месяц</p>
 								<p class="our_passes__text">12 000 руб / 8 уроков</p>
 
-									<div class="our_passes__icons_leveling">
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>8 уроков</p>							
-									</div>	
-									
-									<div class="our_passes__icons_leveling">
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>занятия 2 раза в неделю</p>						
-									</div>
+								<div class="our_passes__basic_1m">
+											<div class="our_passes__icons_leveling">
+													<img class="our_passes__image_check" src="check_icon_green.svg"/>							
+													<p>8 уроков</p>							
+											</div>	
+											
+											<div class="our_passes__icons_leveling">
+													<img class="our_passes__image_check" src="check_icon_green.svg"/>							
+													<p>занятия 2 раза в неделю</p>						
+											</div>
 
-									<div class="our_passes__icons_leveling">
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>индивидуальный уроки</p>			
-									</div>	
+											<div class="our_passes__icons_leveling">
+													<img class="our_passes__image_check" src="check_icon_green.svg"/>							
+													<p>индивидуальный уроки</p>			
+											</div>	
+								
 
 									<button class="button_style">Записаться</button>
+								</div>
 							</div>
 						
-							<div class="our_passes__months">
+						<div class="our_passes__months">
 								<p class="our_passes__month">3 месяца</p>
 								<p class="our_passes__text">32 000 руб / 24 урока</p>	
+									
+								<div class="our_passes__basic_3m">
+
 
 									<div class="our_passes__icons_leveling">	
 											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
@@ -227,43 +235,48 @@
 										<img class="our_passes__image_check" src="check_icon_green.svg"/>							
 										<p>бесплатный разговорный клуб</p>				
 									</div>
-				
+
 									<button class="button_style">Записаться</button>
 							</div>
+						</div>
 
 
 							<div class="our_passes__months">
 								<p class="our_passes__month">6 месяцев</p>
 								<p class="our_passes__text">55 000 руб / 58 уроков</p>	
 
-									<div class="our_passes__icons_leveling">	
+			
+								<div class="our_passes__basic_6m">
+			
+										<div class="our_passes__icons_leveling">	
+												<img class="our_passes__image_check" src="check_icon_green.svg"/>							
+												<p>58 уроков</p>					
+										</div>	
+
+
+										<div class="our_passes__icons_leveling">
+												<img class="our_passes__image_check" src="check_icon_green.svg"/>							
+												<p>занятия 2 раза в неделю</p>								
+										</div>	
+						
+
+										<div class="our_passes__icons_leveling">
+												<img class="our_passes__image_check" src="check_icon_green.svg"/>							
+												<p>индивидуальный уроки</p>				
+										</div>	
+
+										<div class="our_passes__icons_leveling">
 											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>58 уроков</p>					
-									</div>	
-
-
-									<div class="our_passes__icons_leveling">
+											<p>бесплатный разговорный клуб</p>				
+										</div>
+										
+										<div class="our_passes__icons_leveling">
 											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>занятия 2 раза в неделю</p>								
-									</div>	
-					
-
-									<div class="our_passes__icons_leveling">
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>индивидуальный уроки</p>				
-									</div>	
-
-									<div class="our_passes__icons_leveling">
-										<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-										<p>бесплатный разговорный клуб</p>				
-									</div>
+											<p>бесплатная заморозка абонимента</p>				
+										</div>
 									
-									<div class="our_passes__icons_leveling">
-										<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-										<p>бесплатная заморозка абонимента</p>				
-									</div>
-
-									<button class="button_style">Записаться</button>
+										<button class="button_style">Записаться</button>
+								</div>
 							</div>
 						</div>
 
@@ -272,7 +285,7 @@
 			
 			
 			<footer class="footer">
-				<div class="footer_size">
+				<div class="footer_size content">
 
 					<div class="footer_icon__phone">
 						<div class="footer_icon__phone_style">
@@ -285,19 +298,19 @@
 			
 					</div>
 
+							<div class="footer_icon__social-networks">
+								<div class="footer_icon__inst">
+									<i class="fa-brands fa-instagram"></i>
+								</div>
 
-						<div class="footer_icon__inst">
-							<i class="fa-brands fa-instagram"></i>
-						</div>
+								<div class="footer_icon__face">
+									<i class="fa-brands fa-facebook"></i>
+								</div>
 
-						<div class="footer_icon__face">
-							<i class="fa-brands fa-facebook"></i>
-						</div>
-
-						<div class="footer_icon__twit">
-							<i class="fa-brands fa-twitter"></i>
-						</div>
-
+								<div class="footer_icon__twit">
+									<i class="fa-brands fa-twitter"></i>
+								</div>
+							</div>
 					
 					<div>
 						<a class="icon__style_mail" href="english_house@email.com">english_house@email.com</a>
