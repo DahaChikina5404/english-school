@@ -3,7 +3,7 @@
 }
 
 
-html {
+html, a {
             font-family: 'Nunito Sans', sans-serif;
             color: black;
             font-weight: 400;
@@ -40,9 +40,6 @@ html {
             flex-wrap: wrap;
     }
 }
-
-
-
 
 
 .header__image_logo { 
@@ -126,14 +123,6 @@ html {
             margin-top: 100px;
  }
 
-
- @media (max-width: 600px) {
-    .hero_title {
-            font-weight: 500;
-            font-size: 40px;
-            max-width: 400px;
-    }
- }
     
 .hero_text {
             margin-top: 30px;
@@ -146,12 +135,22 @@ html {
 }
 
 
+
+
+
 @media (max-width: 600px) {
+    .hero_title {
+            font-weight: 500;
+            font-size: 40px;
+            max-width: 400px;
+    }
+
     .hero_text {
             max-width: 250px;
             font-size: 20px;
-    }
 }
+
+ }
 
 
 .button_style {
@@ -177,6 +176,7 @@ html {
 .our_benefits {
             margin-top: 100px;
 }
+
 .our_benefits__title { 
             font-size: 34px;
             text-align: center;
@@ -199,7 +199,7 @@ html {
     .benefits {
             flex-direction: column;
             gap: 30px;
-            }
+    }
 }
 
 .benefit {
@@ -216,9 +216,10 @@ html {
             padding-left: 15px;
             padding-right: 15px;
             padding-bottom: 20px;
-            text-align: left;    
+            text-align: center;    
             line-height: 130%;
 }
+
 
 .benefit__image {
             height: 55px;
@@ -245,8 +246,18 @@ html {
 .about_us__container {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            gap: 30px;
 }
+
+
+@media (max-width: 600px) {
+    .about_us__container {
+            flex-direction: column;
+            gap: 30px;
+       }
+}
+
+
 
 .about_us__title {
             font-size: 30px;
@@ -261,7 +272,7 @@ html {
             padding-top: 20px;
             padding-bottom: 10px;
             line-height: 120%;
-            max-width: 500px;
+            width: calc(100%-450px);
             font-weight: 300;
 }
 
@@ -279,11 +290,11 @@ html {
             height: 350px;
             background-color: #ffedd5;
             margin-top: 70px;
-            padding-bottom: 50px;
+            padding-bottom: 20px;
 }
 
 .request_main {
-             padding-top: 70px;
+             padding-top: 30px;
 }
 
 
@@ -291,42 +302,48 @@ html {
             font-size: 35px;
             text-align: center;
             font-weight: 500;
-            padding-bottom: 30px;  
+            padding-bottom: 20px;  
 }
 
 .request_main__text {
             font-size: 18px;
             color: #78716c;
             text-align: center;
-            padding-bottom: 70px; 
+            padding-bottom: 30px; 
 }
 
 .request_main__input {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            align-items: baseline;
+            justify-content: center;
+            align-items: baseline;         
+}
+
+@media (max-width: 600px) {
+    
+    .request {
+            height: 450px;
+        }
+    
+    .request_main__input {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            gap: 30px;
+       }
 }
 
 
-.request_main__input_name {    
+
+
+.request_main__input_label {    
             border-style: solid;
             border-color: #fafaf9;
             border-radius: 10px;
             font-size: 24px;
-            margin-right: 10px;
+            margin-right: 10px; 
 }
  
-
-
-.request_main__input_phone {    
-            border-style: solid;
-            border-color: #fafaf9;
-            border-radius: 10px;
-            font-size: 24px;
-            margin-right: 10px;
-}
-
 
 
  
@@ -353,7 +370,7 @@ html {
 }
 
 .reviews_content {
-            max-width: 590px;
+            max-width: 600px;
             margin: auto;
 }
 
@@ -377,6 +394,16 @@ html {
             width: 600px
 }
 
+@media (max-width: 600px) {
+    .reviews_name {
+            text-align: center;
+        }
+
+    .reviews_text {
+            text-align: center;
+        }
+}
+
 
 
 
@@ -398,11 +425,18 @@ html {
 .our_passes__size { 
             display: flex;
             flex-direction: row;
-            justify-content:space-around;
-            align-items: baseline;
+            justify-content:space-between;
             margin-top: 30px;
 }
 
+
+@media (max-width: 600px) {
+    .our_passes__size {
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+    }
+}
 
 
 .our_passes__months {
@@ -427,13 +461,13 @@ html {
 
 
 .our_passes__month {         
-            color: #f97316;   
-            padding-bottom: 10x;   
+            color: #f97316;    
 }
 
 .our_passes__text {
             font-size: 18px;
             font-weight: 700;
+            padding-top: 15px;
             padding-bottom: 5px;
 
 } 
@@ -484,35 +518,16 @@ html {
 }
 
 
-.our_passes__button { 
-            color: #ea580c;
-            background-color: #fed7aa;
-            margin-top: 30px;
-            width: 250px;
-            height: 35px;
-            font-weight: 200;
-            font-size: 16px;
-            text-align: center;
-            cursor: pointer;
-            border: none;
-            border-radius: 10px;
-            object-position: center;
 
-}
-
-
-.our_passes__button:hover {
-            color:#57534e;
-}
 
 /*Футер*/
 
 
 .footer {
             background-color: #d6d3d1;
-            height: 150px;
+            height: 180px;
             margin-top: 60px;
-            padding-bottom: 30px;
+            padding-bottom: 50px;
 }
 
 
@@ -520,8 +535,17 @@ html {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding-top: 80px;
+            padding-top: 40px;
 }
+
+@media (max-width: 600px) {
+    .footer_size {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+    }
+}
+
 
 .footer_icon__social-networks {
             display: flex;
