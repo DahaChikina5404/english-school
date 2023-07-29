@@ -21,16 +21,16 @@
 				<header class="header content">
 				
 						<div>
-							<img class="header__image_logo" src="logo.svg" alt="Логотип школы"/>	
+							<img class="header__image_logo" src="/image/logo.svg" alt="Логотип школы"/>	
 						</div>
 						
 						<div class="navigation__main">
 								<nav>
-									<a class= "navigation_cost" href="#cost">Стоимость</a>
+									<a class="navigation_link" href="#cost">Стоимость</a>
 								</nav>
 
 								<nav>
-									<a class="navigation_reviews" href="#reviews">Отзывы</a>
+									<a class="navigation_link" href="#reviews">Отзывы</a>
 								</nav>
 						</div>
 
@@ -40,7 +40,7 @@
 							</div>
 	
 							<div>
-								<p class="footer_icon__text">+7 (123) 456-78-90</p>
+								<p class="header_icon__text">+7 (123) 456-78-90</p>
 							</div>
 				
 						</div>
@@ -66,27 +66,25 @@
 				
 <!--Наши преимущества. 3 блока-->	
 		<div class="our_benefits content">
-
 			<div class="our_benefits__title">
 				<h2>Начните разговаривать с первого занятия</h2>
 			</div>
 
 				<div class="benefits">
-
 					<div class="benefit">
-						<img class="benefit__image" src="speak.jpeg"/>
+						<img class="benefit__image" src="/image/speak.jpeg"/>
 						<p class="benefit_talk">Разговорная речь</p>
 						<p>Никаких грамматических заданий по учебнику! Изучайте язык в живой речи.</p>
 					</div>
 
 					<div class="benefit">
-						<img class="benefit__image" src="globe.jpeg"/>
+						<img class="benefit__image" src="/image/globe.jpeg"/>
 						<p class="benefit_talk">Современный язык</p>
 						<p>Изучайте актуальный язык, общаясь с преподавателем на современные темы</p>
 					</div>
 
 					<div class="benefit">
-						<img class="benefit__image" src="man.jpeg"/>
+						<img class="benefit__image" src="/image/man.jpeg"/>
 						<p class="benefit_talk">Индивидуальные занятия</p>
 						<p>Преподаватель занимается только с Вами и Вы учитесь намного быстрее.</p>
 					</div>
@@ -96,86 +94,86 @@
 
 <!--О нас. Текст, картинка-->
 			<main class="about_us content">
-					<div class="about_us__container">
-						<div>
-							<h2 class="about_us__title">Мы научим говорить уверенно!</h2>
+				<div class="about_us__container">
+					<div>
+						<h2 class="about_us__title">Мы научим говорить уверенно!</h2>
 							
-							<p class="about_us__text">Мы считаем, что главная задача языка - помочь нам общаться друг с другом. 
+						<p class="about_us__text">Мы считаем, что главная задача языка - помочь нам общаться друг с другом. 
 								Поэтому на наших занятиях мы отдаем приоретет разговорной речи и навыкам аудирования</p>
-				
-							<p class="about_us__text">Мы не изучаем грамматические правила по учебнику, мы не выполняем задания, где нужно раскрыть скобки или поставить правильный артикль, мы занимаем самым главным - разговариваем. 
+						<br>
+						<p class="about_us__text">Мы не изучаем грамматические правила по учебнику, мы не выполняем задания, где нужно раскрыть скобки или поставить правильный артикль, мы занимаем самым главным - разговариваем. 
 								Мы разговариваем на самые актуальные и интересные темы, чтобы вы могли пополнить свой словарным запас актуальными современными словами.</p>
-						</div>
+					</div>
 																	
-						<div>
-							<img class="about_us__image" src="group-people.jpg"/>
-						</div>
-					</div>	
+					<div>
+						<img class="about_us__image" src="/image/group-people.jpg"/>
+					</div>
+				</div>	
 			</main>
 
 
 <!--Поля с формой записи на урок-->
 
 		<section class="request content">
-			<div class="request_main">
-				<h2 id="lesson_entry" class="request_main__tile">Запишитесь на бесплатный урок уже сегодня</h2>
+			<div>
+				<h2 class="request_main__tile">Запишитесь на бесплатный урок уже сегодня</h2>
 
 				<div >
 					<p class="request_main__text">Преподаватель определит ваш уровень и Вы пройдете полноценный первый урок</p>
 				</div>
 
-					<form action="/form-submit">
-						<div class="request_main__input">
-							<div class="request_main__input_label">
-								<label for="Name">Ваше имя</label>
-								<input type="text" id="Name" name="Name"/>
-							</div>
-
-							<div class="request_main__input_label">
-								<label for="Phone">Ваш телефон</label>
-								<input type="tel" id="Phone" name="Phone"/>
-							</div>
-
-							<button class="button_style">Записаться на пробный урок</button>
-							
+				<form action="/form-submit">
+					<div class="request_main__input">
+						<div class="request_main__input_label">
+							<label for="Name">Ваше имя:</label>
+							<input class="input_field" type="text" id="Name" name="Name"/>
 						</div>
-					</form>
+
+						<div class="request_main__input_label">
+							<label for="Phone">Ваш телефон:</label>
+							<input class="input_field" type="tel" id="Phone" name="Phone"/>
+						</div>
+
+						<button class="button_style">Записаться на пробный урок</button>
+					</div>
+				</form>
 			</div>
 		</section>
 
 
 <!--отзывы-->		
 		<div class="reviews_gray content">
-			<div class="reviews_field">
-
+			<div>
 				<div class="reviews_title">
 					<h2 id="reviews">У нас уже более 500 довольных учеников!</h2>			
 				</div>
-					<div class="reviews_content">
-						<div>
-							<p class="reviews_name">Ольга Морозова</p>
-							<p class="reviews_text">Спасибо огромное преподавателю Марине. Я замимаюсь уже 6 месяцев и это лучшая школа иностранного языка, в которой я училась.</p>			
-						</div>
-						
-						<div>
-							<p class="reviews_name">Андрей Иванов</p>
-							<p class="reviews_text">Я учил английский 10 лет с 5 класса, но так и не мог уверенно разговаривать даже на бытовые темы. 
+
+				<div class="reviews_content">
+					<div>
+						<p class="reviews_name">Ольга Морозова</p>
+						<p class="reviews_text">Спасибо огромное преподавателю Марине. 
+							Я замимаюсь уже 6 месяцев и это лучшая школа иностранного языка, в которой я училась.</p>			
+					</div>
+					
+					<div>
+						<p class="reviews_name">Андрей Иванов</p>
+						<p class="reviews_text">Я учил английский 10 лет с 5 класса, но так и не мог уверенно разговаривать даже на бытовые темы. 
 								Я начал учиться в вашей школе всего 4 месяца назад и сейчас я вернулся из путешествия, 
 								в котором уверенно мог общаться с таксистами, официантами и гидами. Теперь мне нестрашно путешествовать!</p>			
-						</div>
+					</div>
 
-						<div>
-							<p class="reviews_name">Настя Петрова</p>
-							<p class="reviews_text">Мне очень нравится методика преподавания, на уроках мы очень много общаемся и не выполняем скучных задания из учебников. 
+					<div>
+						<p class="reviews_name">Настя Петрова</p>
+						<p class="reviews_text">Мне очень нравится методика преподавания, на уроках мы очень много общаемся и не выполняем скучных задания из учебников. 
 								Благодаря занятиям мой язык стал более живой, современный, 
 								я узнала про сленг, а на прошлой неделе познакомилась с иностранцем!</p>			
-						</div>
 					</div>
+				</div>
 			</div>
 		</div>
 
 <!--Стоимость абонементов. 3 блока-->
-			<div class="our_passe content">
+			<div class="our_passes content">
 
 					<div>
 						<h2 class="our_passes__title" id="cost">Наши абонементы</h2>
@@ -188,17 +186,17 @@
 
 								<div class="our_passes__basic_1m">
 											<div class="our_passes__icons_leveling">
-													<img class="our_passes__image_check" src="check_icon_green.svg"/>							
+													<img class="our_passes__image_check" src="/image/check_icon_green.svg"/>							
 													<p>8 уроков</p>							
 											</div>	
 											
 											<div class="our_passes__icons_leveling">
-													<img class="our_passes__image_check" src="check_icon_green.svg"/>							
+													<img class="our_passes__image_check" src="/image/check_icon_green.svg"/>							
 													<p>занятия 2 раза в неделю</p>						
 											</div>
 
 											<div class="our_passes__icons_leveling">
-													<img class="our_passes__image_check" src="check_icon_green.svg"/>							
+													<img class="our_passes__image_check" src="/image/check_icon_green.svg"/>							
 													<p>индивидуальный уроки</p>			
 											</div>	
 								
@@ -207,71 +205,66 @@
 								</div>
 							</div>
 						
-						<div class="our_passes__months">
-								<p class="our_passes__month">3 месяца</p>
-								<p class="our_passes__text">32 000 руб / 24 урока</p>	
-									
-								<div class="our_passes__basic_3m">
-
-
-									<div class="our_passes__icons_leveling">	
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>24 урока</p>					
-									</div>	
-
-
-									<div class="our_passes__icons_leveling">
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>занятия 2 раза в неделю</p>								
-									</div>	
-					
-
-									<div class="our_passes__icons_leveling">
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>индивидуальный уроки</p>				
-									</div>	
-
-									<div class="our_passes__icons_leveling">
-										<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-										<p>бесплатный разговорный клуб</p>				
-									</div>
-
-									<button class="button_style">Записаться</button>
-							</div>
-						</div>
-
-
 							<div class="our_passes__months">
-								<p class="our_passes__month">6 месяцев</p>
-								<p class="our_passes__text">55 000 руб / 58 уроков</p>	
-
-			
-								<div class="our_passes__basic_6m">
-			
+									<p class="our_passes__month">3 месяца</p>
+									<p class="our_passes__text">32 000 руб / 24 урока</p>	
+										
+									<div class="our_passes__basic_3m">
 										<div class="our_passes__icons_leveling">	
-												<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-												<p>58 уроков</p>					
+												<img class="our_passes__image_check" src="/image/check_icon_green.svg"/>							
+												<p>24 урока</p>					
 										</div>	
 
 
 										<div class="our_passes__icons_leveling">
-												<img class="our_passes__image_check" src="check_icon_green.svg"/>							
+												<img class="our_passes__image_check" src="/image/check_icon_green.svg"/>							
 												<p>занятия 2 раза в неделю</p>								
 										</div>	
 						
 
 										<div class="our_passes__icons_leveling">
-												<img class="our_passes__image_check" src="check_icon_green.svg"/>							
+												<img class="our_passes__image_check" src="/image/check_icon_green.svg"/>							
 												<p>индивидуальный уроки</p>				
 										</div>	
 
 										<div class="our_passes__icons_leveling">
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
+											<img class="our_passes__image_check" src="/image/check_icon_green.svg"/>							
+											<p>бесплатный разговорный клуб</p>				
+										</div>
+
+										<button class="button_style">Записаться</button>
+								</div>
+							</div>
+
+							<div class="our_passes__months">
+								<p class="our_passes__month">6 месяцев</p>
+								<p class="our_passes__text">55 000 руб / 58 уроков</p>	
+
+								<div class="our_passes__basic_6m">
+										<div class="our_passes__icons_leveling">	
+												<img class="our_passes__image_check" src="/image/check_icon_green.svg"/>							
+												<p>58 уроков</p>					
+										</div>	
+
+
+										<div class="our_passes__icons_leveling">
+												<img class="our_passes__image_check" src="/image/check_icon_green.svg"/>							
+												<p>занятия 2 раза в неделю</p>								
+										</div>	
+						
+
+										<div class="our_passes__icons_leveling">
+												<img class="our_passes__image_check" src="/image/check_icon_green.svg"/>							
+												<p>индивидуальный уроки</p>				
+										</div>	
+
+										<div class="our_passes__icons_leveling">
+											<img class="our_passes__image_check" src="/image/check_icon_green.svg"/>							
 											<p>бесплатный разговорный клуб</p>				
 										</div>
 										
 										<div class="our_passes__icons_leveling">
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
+											<img class="our_passes__image_check" src="/image/check_icon_green.svg"/>							
 											<p>бесплатная заморозка абонимента</p>				
 										</div>
 									
@@ -281,9 +274,9 @@
 						</div>
 
 			</div>
+			
+<!-- Футер -->
 
-			
-			
 			<footer class="footer">
 				<div class="footer_size content">
 
@@ -295,30 +288,28 @@
 						<div>
 							<p class="footer_icon__phone_style">+7 (123) 456-78-90</p>
 						</div>
-			
 					</div>
 
+<!--  Социальные сети  -->
 							<div class="footer_icon__social-networks">
-								<div class="footer_icon__inst">
+								<div class="footer__icones">
 									<i class="fa-brands fa-instagram"></i>
 								</div>
 
-								<div class="footer_icon__face">
+								<div class="footer__icones">
 									<i class="fa-brands fa-facebook"></i>
 								</div>
 
-								<div class="footer_icon__twit">
+								<div class="footer__icones">
 									<i class="fa-brands fa-twitter"></i>
 								</div>
 							</div>
 					
 					<div>
-						<a class="icon__style_mail" href="english_house@email.com">english_house@email.com</a>
+						<a class="footer__icones" href="english_house@email.com">english_house@email.com</a>
 					</div>
 
 				</div>
 			</footer>
-
-				
 	</body>
 </html>
